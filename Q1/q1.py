@@ -13,12 +13,14 @@ def main() :
     count = 0
 
     for row in data :
-        sum_avg += float(row[2])
-        sum_max += float(row[-1])
-        if row[-2] == '' :
+        
+        if '' in row :
             continue
-        else : sum_min += float(row[-2])
-        count += 1
+        else :
+            sum_min += float(row[-2])
+            sum_avg += float(row[2])
+            sum_max += float(row[-1])
+            count += 1
 
     avg = sum_avg/count
     min_avg = sum_min / count
