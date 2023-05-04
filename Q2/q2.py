@@ -31,7 +31,7 @@ def main() :
     print("Day with the Largest Temperature Variation : ",max_date.strip(),"\n")
     print("Maximum Temperature Difference : {0:.1f} Celsius\n".format(max_diff))
     print("Day with the Smallest Temperature Variation : ",min_date.strip(),"\n")
-    print("Average Minimum Temperature : {0:.1f} Celsius\n".format(min_diff))
+    print("Minimum Temperature Difference : {0:.1f} Celsius\n".format(min_diff))
 
     f.close()
 
